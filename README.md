@@ -1,11 +1,11 @@
 # websocketx
 Nim websocket for httpx.
 
-Examples in https://github.com/treeform/ws
+Based on https://github.com/treeform/ws
 
 ## Installation
 ```
-nimble install websocketx
+nimble install https://github.com/xflywind/websocketx
 ```
 
 ## Usage
