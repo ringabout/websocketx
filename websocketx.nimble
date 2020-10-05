@@ -10,6 +10,6 @@ srcDir        = "src"
 
 # Dependencies
 
-requires "nim >= 1.3.5"
+requires "nim >= 1.2.6"
 requires "ws >= 0.4.3"
-requires "httpx >= 0.1.0"
+requires "httpx >= 0.1.8"
