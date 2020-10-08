@@ -5,11 +5,8 @@
 # Copyright 2020 xflywind
 
 
-import asyncdispatch, asyncnet, options
-import ws
-
-
-import httpx
+import std/[asyncdispatch, asyncnet, options]
+import pkg/[ws, httpx]
 
 
 proc newWebSocket*(req: Request): Future[WebSocket] {.async.} =

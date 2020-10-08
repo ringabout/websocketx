@@ -1,8 +1,8 @@
-import options, asyncdispatch
+import std/[options, asyncdispatch]
 
 import ../src/websocketx
 
-import httpx
+import pkg/httpx
 
 proc onRequest(req: Request) {.async.} =
   if req.path.isSome:
