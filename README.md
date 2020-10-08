@@ -5,7 +5,7 @@ Based on https://github.com/treeform/ws
 
 ## Installation
 ```
-nimble install https://github.com/xflywind/websocketx
+nimble install websocketx
 ```
 
 ## Usage
@@ -13,7 +13,8 @@ nimble install https://github.com/xflywind/websocketx
 ### httpx
 
 ```nim
-import options, asyncdispatch, httpx
+import options, asyncdispatch, httpx, websocketx
+
 
 proc onRequest(req: Request) {.async.} =
   if req.path.isSome:
@@ -35,7 +36,7 @@ run(onRequest)
 ### asyncdispatch
 
 ```nim
-import ws, asyncdispatch, asynchttpserver
+import websocketx, asyncdispatch, asynchttpserver
 
 var server = newAsyncHttpServer()
 proc cb(req: Request) {.async.} =
